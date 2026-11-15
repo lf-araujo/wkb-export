@@ -1,0 +1,15 @@
+#+TITLE: wkb-export
+
+Export org to notebook HTML, LaTeX PDF and Beamer PDF via pandoc; holds wkblayout, the shared layout directives.
+
+A package for [[https://github.com/lf-araujo/wkbenchless][wkbenchless]]. Install it from the editor with
+=M-x package-install= (or =wkbenchless ctl package-install wkb-export=).
+
+* What it does
+Export the org buffer through pandoc, without Emacs:
+- =notebook-html-export= -- HTML with the Emacs "notebook" look;
+- =latex-pdf-export= -- a LaTeX article PDF;
+- =beamer-pdf-export= -- Beamer slides.
+Each is also in the Export menu. Needs =pandoc= and a LaTeX engine (lualatex by
+default) on PATH. =src/wkblayout.nim= holds the backend-neutral layout
+directives the exporters (and wkb-org-tracked) share.

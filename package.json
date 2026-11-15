@@ -1,0 +1,7 @@
+{
+  "name": "wkb-export",
+  "version": "0.1.0",
+  "description": "Export org to notebook HTML, LaTeX PDF and Beamer PDF via pandoc; holds wkblayout, the shared layout directives",
+  "kind": "native",
+  "requires": []
+}
